@@ -6,13 +6,13 @@ $hari_ini = date('Y-m-d');
         <div class="card-body">
             <form action="" class="d-flex align-items-center">
                 <input type="hidden" name="p" value="laporan">
-                <div class="mb-3 d-flex align-items-center mx-2">
-                    <label class="form-label">Tanggal Awal</label>
+                <div class="form-floating mb-3 d-flex align-items-center mx-2">
                     <input type="date" class="form-control" id="tgl_awal" name="tglDari" value="<?= !empty($_GET['tglDari']) ? $_GET['tglDari'] : $hari_ini ?>">
+                    <label class="form-label">Tanggal Awal</label>
                 </div>
-                <div class="mb-3 d-flex align-items-center mx-2">
-                    <label class="form-label">Tanggal Sampai</label>
+                <div class="form-floating mb-3 d-flex align-items-center mx-2">
                     <input type="date" class="form-control" id="tgl_sampai" name="tglSampai" value="<?= !empty($_GET['tglSampai']) ? $_GET['tglSampai'] : $hari_ini ?>">
+                    <label class="form-label">Tanggal Sampai</label>
                 </div>
                 <div class="mb-3">
                     <input type="submit" class="btn btn-sm btn-primary" name="search" value="Filter">
